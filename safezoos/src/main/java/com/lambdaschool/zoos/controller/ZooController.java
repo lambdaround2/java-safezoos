@@ -33,7 +33,7 @@ public class ZooController
         return new ResponseEntity<>(zoo, HttpStatus.OK);
     }
 
-    // http://localhost:2019/zoos/zoos/{zooname}
+    // http://localhost:2019/zoos/{zooname}
     @GetMapping(value = "/{zooname}",
                 produces = {"application/json"})
     public ResponseEntity<?> getZooByName(@PathVariable String zooname)
